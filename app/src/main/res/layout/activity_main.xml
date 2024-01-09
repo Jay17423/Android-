@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:inputType="number"
+        android:inputType="text"
         app:layout_constraintVertical_bias="0.07999998" />
 
     <Button
@@ -43,9 +43,22 @@
         android:text="Your Number is"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29000002" />
+        app:layout_constraintVertical_bias="0.292" />
+
+    <ImageView
+        android:id="@+id/myimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/jay"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/FirstTextView"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/FirstTextView"
+        app:layout_constraintTop_toBottomOf="@+id/FirstTextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

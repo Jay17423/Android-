@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText textview;
     Button button;
     TextView FirstText;
+    ImageView Firstimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +24,18 @@ public class MainActivity extends AppCompatActivity {
         textview=(EditText) findViewById(R.id.EditText);
         button=(Button) findViewById(R.id.Button);
         FirstText=(TextView)  findViewById(R.id.FirstTextView);
+        Firstimage=(ImageView) findViewById(R.id.myimage);
     }
     public void onMyButtonClick(View view){
-        String phoneNumberStr = textview.getText().toString();
-        if(!phoneNumberStr.equals("")) {
-            FirstText.setText("My Number is" + phoneNumberStr);
+        String myName = textview.getText().toString();
+        
+        if(myName.equals(" ")){
+            Toast.makeText(this, "Enter Your name", Toast.LENGTH_SHORT).show();
         }
         else{
-            Toast.makeText(MainActivity.this, "Please enter the number", Toast.LENGTH_SHORT).show();
-            }
-
+            Firstimage.setVisibility(view.VISIBLE);
         }
+
+    }
+
     }

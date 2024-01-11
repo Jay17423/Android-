@@ -40,7 +40,7 @@
         android:id="@+id/FirstTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Number is"
+        android:text="I agree the terms and condition 1. I will do conding daily basic 2. I will do Development from monday to friday3. I will  be consistent daily"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -52,11 +52,22 @@
         android:id="@+id/myimage"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="104dp"
         android:src="@drawable/jay"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/FirstTextView"
-        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/FirstTextView"
+        app:layout_constraintTop_toBottomOf="@+id/FirstTextView" />
+
+    <CheckBox
+        android:id="@+id/basicCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="I agree the tersm and conditions "
+        app:layout_constraintEnd_toEndOf="@+id/FirstTextView"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="@+id/FirstTextView"
         app:layout_constraintTop_toBottomOf="@+id/FirstTextView" />
 
